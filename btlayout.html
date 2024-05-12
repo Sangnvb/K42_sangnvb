@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: rgb(238, 233, 233); 
+        width:1000px;       
+    }
+    .head{
+        display: flex;
+        height: 50px;        
+    }
+    .logo{
+        border: 2px solid black;
+        text-align: center;
+        width: 30%;
+        margin-left: 10px;
+        padding-top: 12px;
+        background-color: rgb(221, 127, 127);
+    }
+    .banner{
+        border: 2px solid black;
+        text-align: center;
+        width: 70%;
+        margin-right: 10px;
+        margin-left: 2px;
+        padding-top: 12px;
+        background-color: rgb(218, 159, 159);
+    }
+    .menu{
+        display: flex;
+        height: 25px;
+        border: 2px solid black;
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: blue;
+        text-align: center;
+        background-color: rgb(98, 187, 157);
+    }
+    .home{        
+        width: 75px;        
+        border-right: 2px solid black; 
+        padding-top: 3px;
+    }
+    .student{
+        border-right: 2px solid black;       
+        width: 75px;
+        margin-left: 2px;
+        padding-top: 3px;
+    }
+    .courses{
+        border-right: 2px solid black;        
+        width: 75px;
+        margin-left: 2px;   
+        padding-top: 3px;     
+    }
+    .about{
+        border-right: 2px solid black;        
+        width: 85px;
+        margin-left: 2px;  
+        padding-top: 3px;     
+    }
+    .contact{
+        border-right: 2px solid black;        
+        width: 85px;
+        margin-left: 2px; 
+        padding-top: 3px;       
+    }
+    .search{
+        border: 2px solid black;        
+        height: 18px;
+        width: 200px; 
+        margin-left: 415px; 
+        margin-top: 2px;   
+        margin-right: 2px;
+        padding-left: 3px;   
+        text-align: left;
+    }
+    .content{
+        display: flex;
+        margin-top: 10px;
+    }
+    .left{
+        flex-direction: row;          
+        margin-top: 5px;
+        margin-left: 10px; 
+        background-color: rgb(126, 126, 195);       
+    }
+    .left-1{
+        border: 2px solid black;
+        height: 150px;
+        width: 150px;
+        text-align: left;
+    }
+    .left-2{
+        border: 2px solid black;
+        height: 158px;
+        width: 150px;
+        margin-top: 5px;
+    }
+    .center-a{
+        display: flex;
+        background-color: rgb(129, 166, 84);
+    }
+    .center-1{
+        border: 2px solid black;
+        height: 100px;
+        width: 300px;
+        margin-top: 5px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .center-2{
+        border: 2px solid black;
+        height: 100px;
+        width: 300px;
+        margin-top: 5px;
+        margin-left: 13px;
+        text-align: center;
+    }
+    .center-b{
+        display: flex;
+        background-color: rgb(129, 166, 84);
+    }
+    .center-3{
+        border: 2px solid black;
+        height: 100px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .center-4{
+        border: 2px solid black;
+        height: 100px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .center-5{
+        border: 2px solid black;
+        height: 100px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .center-c{
+        display: flex;
+        background-color: rgb(129, 166, 84);
+    }
+    .center-6{
+        border: 2px solid black;
+        height: 100px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .center-7{
+        border: 2px solid black;
+        height: 100px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .center-8{
+        border: 2px solid black;
+        height: 100px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .right{
+        border: 2px solid black;
+        height: 316px;
+        width: 200px;
+        margin-top: 5px;
+        margin-left: 5px;
+        text-align: center;
+        margin-right: 10px;
+        background-color: rgb(177, 121, 231);
+    }
+    .foodter{
+        display: flex;
+        border: 2px solid black;
+        height: 25px;
+        width: 980px;
+        margin-top: 20px;
+        margin-left: 10px;
+        text-align: center;
+        margin-right: 10px;
+        color: blue;
+        background-color: cornflowerblue;
+    }
+    .tapchi{
+        padding-top: 3px;
+        width: 200px;
+        color: black;
+
+    }
+    .home-foodter{
+        width: 75px;        
+        border-left: 2px solid black; 
+        padding-top: 3px;
+        margin-left: 400px
+    }
+    .student-foodter{
+        width: 75px;        
+        border-left: 2px solid black; 
+        padding-top: 3px;
+        margin-left: 2px
+    }
+    .courses-foodter{
+        width: 75px;        
+        border-left: 2px solid black; 
+        padding-top: 3px;
+        margin-left: 2px
+    }
+    .about-foodter{
+        width: 85px;        
+        border-left: 2px solid black; 
+        padding-top: 3px;
+        margin-left: 2px
+    }
+    .contact-foodter{
+        width: 85px;        
+        border-left: 2px solid black; 
+        padding-top: 3px;
+        margin-left: 2px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="logo">Logo</div>
+            <div class="banner">Banner</div>
+        </div>
+        <div class="menu">
+            <div class="home">Home</div>
+            <div class="student">Student</div>
+            <div class="courses">Courses</div>
+            <div class="about"> About Us</div>
+            <div class="contact">Contact Us</div>
+            <div class="search">Search</div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="left-1">
+                    <div class="introduction">Introduction</div>
+                    <div class="news">News</div>
+                    <div class="education">Education</div>
+                    <div class="register">Register</div>
+                    <div class="courses-left">Courses</div>
+                </div>
+                <div class="left-2">Image</div>
+            </div>
+            <div class="center">                
+            <div class="center-a">
+                <div class="center-1">Hot news</div>
+                <div class="center-2">Photo sides</div>
+            </div>
+            <div class="center-b">           
+                <div class="center-3">News 1</div>
+                <div class="center-4">News 2</div>
+                <div class="center-5">News 3</div>
+            </div>
+            <div class="center-c">
+                <div class="center-6">News 4</div>
+                <div class="center-7">News 5</div>
+                <div class="center-8">News 6</div>
+            </div>
+            </div>
+            <div class="right">Bieu do</div>
+        </div>           
+        <div class="foodter">
+            <div class="tapchi">@2012 TapChiLapTrinh</div>
+            <div class="home-foodter">Home</div>
+            <div class="student-foodter">Student</div>
+            <div class="courses-foodter">Courses</div>
+            <div class="about-foodter"> About Us</div>
+            <div class="contact-foodter">Contact Us</div>
+        </div>     
+    </div>
+</body>
+</html>
