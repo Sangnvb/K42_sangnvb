@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="toan" type="text" placeholder="diem toan">
+    <input id="ly" type="text" placeholder="diem ly">
+    <input id="hoa" type="text" placeholder="diem hoa">
+    <button onclick="sum()">tinh diem trung binh</button>
+    <script language="javascript">
+        const sum=() => {
+            let toan = parseInt(document.getElementById("toan").value);
+            let ly = parseInt(document.getElementById("ly").value);
+            let hoa = parseInt(document.getElementById("hoa").value);
+            console.log("tong diem:" + (toan+ly+hoa));
+            console.log("diem trung binh:" + (toan+ly+hoa)/3);
+        };
+    </script>
+</body>
+</html>
